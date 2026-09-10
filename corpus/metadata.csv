@@ -1,11 +1,5 @@
 author,id,text_type,year,source,license,word_count,covid_era
 egya,egya_poem_01_do_you_know,poetry,2009,lyrikline.org,fair_use_academic_analysis,151,pre
-liam,liam_01_africanwriter_bread,interview,2014,africanwriter.com/writing-experience-bakes-the-best-bread-paul-t-liam/,fair_use_academic_analysis,555,pre
-liam,liam_02_dailytrust_overemphasis,interview,2016,dailytrust.com/northern-artists-overemphasising-certain-themes-for-artistic-gratification/,fair_use_academic_analysis,566,pre
-liam,liam_03_channels_deaf_birds,review,2024,channelstv.com/2024/10/23/re-imagining-homeland-in-sodiq-alabis-deaf-birds-and-frozen-frames-by-paul-liam/,fair_use_academic_analysis,560,post
-liam,liam_04_channels_oriogun,review,2024,channelstv.com/2024/10/23/displacement-and-socio-political-consciousness-in-romeo-orioguns-the-gathering-of-bastards-by-paul-liam/,fair_use_academic_analysis,554,post
-liam,liam_05_shamsrumi_drifting_cords,review,2025,shamsrumi.org/review-olaniyis-drifting-codes-paulliam/,fair_use_academic_analysis,517,post
-liam,liam_06_musefair_our_country,review,2017,thearts-musefair.com/2017/07/book-review-our-country-holds-whip.html,fair_use_academic_analysis,558,pre
 shittu,shittu_01_berkeley_metaphor,academic_article,2024,berkeleypublications.com/bjhss/article/view/134,CC_BY_4.0,554,pre
 shittu,shittu_02_prague_intro,academic_article,2024,ojs.cuni.cz/pjes/article/download/4611/3734/19867,fair_use_academic_analysis,582,pre
 shittu,shittu_03_brittlepaper_ana,news,2025,brittlepaper.com/2025/11/ana-2025/,fair_use_academic_analysis,379,post
@@ -21,3 +15,4 @@ egya,egya_07_springs_poor_woods,critical_essay,2022,springs-rcc.org/the-poor-woo
 egya,egya_08_shamsrumi_defence_poetry,critical_essay,2021,shamsrumi.org/in-defence-of-poetry-sabouke-versus-dangerous-ideologists-e-e-sule/,fair_use_academic_analysis,810,pre
 egya,egya_09_africanwriter_interview,interview,2014,africanwriter.com/e-e-sule-a-burden-to-get-it-right/,fair_use_academic_analysis,693,pre
 egya,egya_10_africanwriter_publishers,critical_essay,2019,africanwriter.com/what-is-really-wrong-with-the-publishers-in-nigeria/,fair_use_academic_analysis,822,pre
+

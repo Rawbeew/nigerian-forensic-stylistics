@@ -15,7 +15,7 @@
 |---|---|---|
 | **** | Prof, novelist, poet, literary critic | Writes BOTH poetry and criticism — intra-author control |
 | **Sule Egya / E.E. Sule** | Prof, novelist, poet, critic | Writes BOTH fiction AND criticism — intra-author control |
-| **Paul Liam** | Poet, critic, Niger State | Tiv, writes poetry AND reviews — intra-author control |
+| **** | Poet, critic, Niger State | Tiv, writes poetry AND reviews — intra-author control |
 | **Toyin Shittu** | Poet, Osun State University, playwright | ANA KMVL shortlist 2025; contemporary relevance |
 
 ## Repository structure
@@ -49,7 +49,7 @@
 - [x] Colab pipeline adapted for 4 authors
 - [x] **Corpus assembled: 18 excerpts, 9,016 words**
   - : 5 excerpts (interviews, news, panel coverage)
-  - Liam: 6 excerpts (interviews, his own critical writing in Channels TV, Shamsrumi, Musefair)
+  -: 6 excerpts (interviews, his own critical writing in Channels TV, Shamsrumi, Musefair)
   - Shittu: 6 excerpts (his own academic articles + ANA news)
   - Egya: 10 excerpts (5 poetry, 4 critical essays, 1 interview)
 - [ ] Pull remaining Sule Egya excerpts (poetry + critical)
@@ -63,7 +63,7 @@
 
 - **Sule Egya:** [lyrikline.org](https://www.lyrikline.org/en/authors/e-e-sule), [africanwriter.com](https://www.africanwriter.com/e-e-sule-a-burden-to-get-it-right/)
 - **:** [Daily Trust interview](https://dailytrust.com/how-near-death-experience-prompted-my-novel-maryam-/), Amazon *Burning Bright* listing
-- **Paul Liam:** [africanwriter.com](https://www.africanwriter.com/writing-experience-bakes-the-best-bread-paul-t-liam/), [Minna City of Literature](https://minnacityofliterature.com.ng/paul-liam/)
+- **Toyin Shittu** bio at Osun State University (ujws.uniosun.edu.ng/ajllcs/issue/view/49)
 - **Toyin Shittu:** [Berkeley Publications (Oseni & Hamzah 2024)](https://berkeleypublications.com/bjhss/article/view/134), [Daily Trust](https://dailytrust.com/daily-trust-corps-member-shortlisted-for-ana-poetry-prize/), Osun State University
 
 ## Data availability

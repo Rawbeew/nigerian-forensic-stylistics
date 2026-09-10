@@ -28,7 +28,6 @@ Use their typical line lengths, imagery, and structural patterns. Aim for
 the rhythms and themes characteristic of their published work.
 ```
 
-For Awaisu (novelist):
 ```
 Write 500 words of contemporary Nigerian prose fiction in the voice of 
 {author_name}, who writes about {themes}. Capture the novelistic texture 
@@ -99,7 +98,6 @@ All providers have free tiers sufficient for 120 generations. Estimated cost: $0
 Generated passages are saved to `pipeline/output/synthetic_corpus.csv` with columns:
 - `id` (synth_P1_001, etc.)
 - `prompt_id` (P1, P2, or P3)
-- `author` (awaisu, egya, liam, or shittu)
 - `model` (gpt-4o, claude-3.5, gemini-1.5, or llama-3-70b)
 - `text` (the generated passage)
 - `generation_timestamp` (ISO format)
