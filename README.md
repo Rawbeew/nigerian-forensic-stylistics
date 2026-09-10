@@ -46,8 +46,13 @@
 - [x] Repo created
 - [x] Outline drafted
 - [x] Sule Egya poem extracted (lyrikline.org)
-- [x] Colab pipeline adapted
-- [ ] Pull remaining 79 public passages
+- [x] Colab pipeline adapted for 4 authors
+- [x] **Corpus assembled: 18 excerpts, 9,016 words**
+  - Awaisu: 5 excerpts (interviews, news, panel coverage)
+  - Liam: 6 excerpts (interviews, his own critical writing in Channels TV, Shamsrumi, Musefair)
+  - Shittu: 6 excerpts (his own academic articles + ANA news)
+  - Egya: 1 poem (more being pulled in background)
+- [ ] Pull remaining Sule Egya excerpts (poetry + critical)
 - [ ] Build LLM imitation corpus (160 passages)
 - [ ] Run analysis
 - [ ] Draft paper
