@@ -6,7 +6,7 @@ This file documents the prompt conditions used to generate LLM imitations of the
 
 - **Models:** GPT-4o, Claude 3.5 Sonnet, Gemini 1.5 Pro, Llama 3-70B
 - **Per model × per author:** 10 passages
-- **Total synthetic passages:** 4 models × 4 authors × 10 = 160
+- **Total synthetic passages:** 4 models × 3 authors × 10 = 120
 - **Generation parameters:** temperature 0.7, top-p 1.0, max_tokens 750
 
 ## Prompt Conditions
@@ -52,11 +52,6 @@ Themes (cycled through):
 
 ## Per-Author Author-Specific Prompt Extensions
 
-### Maryam Awaisu
-- Themes: women's rights in Northern Nigeria, sickle cell disease, conservative Muslim family dynamics
-- Style: formal and colloquial mix, vivid imagery, complex sentences for introspection
-- Reference works: *The Thing About Compromise*, *Burning Bright*, *Ms. Joana's Rules*
-
 ### Sule Egya / E.E. Sule
 - Themes: environmental degradation, Niger Delta, political corruption, national identity
 - Style: dense figurative language, nature imagery, protest undertones
@@ -97,7 +92,7 @@ def generate(prompt, model="default"):
 
 ## Cost
 
-All providers have free tiers sufficient for 160 generations. Estimated cost: $0.00.
+All providers have free tiers sufficient for 120 generations. Estimated cost: $0.00.
 
 ## Output
 

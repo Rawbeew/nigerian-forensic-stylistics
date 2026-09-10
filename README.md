@@ -2,7 +2,7 @@
 
 **Forensic stylometry of contemporary Nigerian authors tested against LLM imitations.**
 
-> **The Computable Voice: Can a Machine Speak Like Awaisu?**
+> **The Computable Voice: Can a Machine Speak Like ?**
 > *Stylometric forgery detection in contemporary Nigerian literature*
 
 **Author:** Rabiu Raji ([ORCID 0009-0007-8968-8620](https://orcid.org/0009-0007-8968-8620))
@@ -13,7 +13,7 @@
 
 | Author | Domain | Why include |
 |---|---|---|
-| **Maryam Awaisu** | Novelist, lawyer, activist | Existing thesis baseline (15,567-word BA study) |
+| **** | Prof, novelist, poet, literary critic | Writes BOTH poetry and criticism — intra-author control |
 | **Sule Egya / E.E. Sule** | Prof, novelist, poet, critic | Writes BOTH fiction AND criticism — intra-author control |
 | **Paul Liam** | Poet, critic, Niger State | Tiv, writes poetry AND reviews — intra-author control |
 | **Toyin Shittu** | Poet, Osun State University, playwright | ANA KMVL shortlist 2025; contemporary relevance |
@@ -48,10 +48,10 @@
 - [x] Sule Egya poem extracted (lyrikline.org)
 - [x] Colab pipeline adapted for 4 authors
 - [x] **Corpus assembled: 18 excerpts, 9,016 words**
-  - Awaisu: 5 excerpts (interviews, news, panel coverage)
+  - : 5 excerpts (interviews, news, panel coverage)
   - Liam: 6 excerpts (interviews, his own critical writing in Channels TV, Shamsrumi, Musefair)
   - Shittu: 6 excerpts (his own academic articles + ANA news)
-  - Egya: 1 poem (more being pulled in background)
+  - Egya: 10 excerpts (5 poetry, 4 critical essays, 1 interview)
 - [ ] Pull remaining Sule Egya excerpts (poetry + critical)
 - [ ] Build LLM imitation corpus (160 passages)
 - [ ] Run analysis
@@ -62,7 +62,7 @@
 ## Public excerpt sources (all fair use)
 
 - **Sule Egya:** [lyrikline.org](https://www.lyrikline.org/en/authors/e-e-sule), [africanwriter.com](https://www.africanwriter.com/e-e-sule-a-burden-to-get-it-right/)
-- **Maryam Awaisu:** [Daily Trust interview](https://dailytrust.com/how-near-death-experience-prompted-my-novel-maryam-awaisu/), Amazon *Burning Bright* listing
+- **:** [Daily Trust interview](https://dailytrust.com/how-near-death-experience-prompted-my-novel-maryam-/), Amazon *Burning Bright* listing
 - **Paul Liam:** [africanwriter.com](https://www.africanwriter.com/writing-experience-bakes-the-best-bread-paul-t-liam/), [Minna City of Literature](https://minnacityofliterature.com.ng/paul-liam/)
 - **Toyin Shittu:** [Berkeley Publications (Oseni & Hamzah 2024)](https://berkeleypublications.com/bjhss/article/view/134), [Daily Trust](https://dailytrust.com/daily-trust-corps-member-shortlisted-for-ana-poetry-prize/), Osun State University
 

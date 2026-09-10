@@ -2,13 +2,13 @@
 
 **Title (v3):** *The Computable Voice: Forensic Stylometry of Four Contemporary Nigerian Authors Tested Against LLM Imitations*
 
-**Title (v4 — short):** *Can a Machine Speak Like Awaisu? Stylometric Forgery Detection in Contemporary Nigerian Literature*
+**Title (v4 — short):** *Can a Machine Speak Like Egya? Stylometric Forgery Detection in Contemporary Nigerian Literature*
 
 **Subtitle (v6 — pre-/post-COVID framing):** *A Pre-/Post-COVID Comparative Test of LLM Literary Mimicry in Nigerian Fiction and Poetry*
 
 **Author:** Rabiu Raji (ORCID: 0009-0007-8968-8620)
 **Affiliation:** Independent researcher, Ilorin, Nigeria
-**Keywords:** stylometry, Nigerian literature, large language models, post-colonial literature, COVID-19 fiction register, forensic authorship attribution, Burrows' Delta, Biber features, Maryam Awaisu, Sule Egya, Paul Liam, Toyin Shittu
+**Keywords:** stylometry, Nigerian literature, large language models, post-colonial literature, COVID-19 fiction register, forensic authorship attribution, Burrows' Delta, Biber features, Sule Egya, Paul Liam, Toyin Shittu
 
 ---
 
@@ -32,7 +32,7 @@
 
 | Author | Pre-COVID works (2012-2019) | Post-COVID works (2020-2025) |
 |---|---|---|
-| Maryam Awaisu | *Burning Bright* (2014), *Ms. Joana's Rules* (2018), *The Thing About Compromise* (2019) | Post-2020 interviews, panel coverage — but she hasn't published a new novel post-COVID yet |
+| Maryam Egya | *Burning Bright* (2014), *Ms. Joana's Rules* (2018), *The Thing About Compromise* (2019) | Post-2020 interviews, panel coverage — but she hasn't published a new novel post-COVID yet |
 | Sule Egya | *Sterile Sky* (2013), *Makwala* (2019), 3 poetry collections (2006-2014), 4 critical monographs (2014-2019) | *Nature, Environment and Activism* (Routledge 2020) — but most are pre-COVID thematic content |
 | Paul Liam | *Indefinite Cravings* (2012), *Saint Sha'ade* (2014) | Book reviews published 2024-2025 |
 | Toyin Shittu | *Naija Blues* (2016), *The Crash* (2024 pre-publication) | *Japa: Elegy for Nigerians* (2024, ANA shortlist) |
@@ -58,7 +58,7 @@
 
 As Large Language Models (LLMs) approach fluency parity with human writers, the question of what forensic anchors remain for literary authorship attribution becomes philosophically and practically urgent. We exploit a natural experimental boundary: the four contemporary Nigerian authors in our corpus span both pre-COVID (2012–2019) and post-COVID (2020–2025) literary production, creating a culturally-specific register (Nigerian English, pandemic-aware idiom) that tests whether LLM imitation accuracy depends on training-data familiarity rather than surface fluency.
 
-We construct a balanced corpus of 27 public excerpts (⇔13,000 words total) from four contemporary Nigerian authors — Maryam Awaisu, Sule Egya, Paul Liam, and Toyin Shittu — spanning both creative writing (novels, poetry) and academic/critical prose for two authors. We stratify excerpts by pre-/post-COVID boundary and generate 160 LLM imitations across four model families (GPT-4o, Claude 3.5 Sonnet, Gemini 1.5 Pro, Llama 3-70B) under three prompting conditions.
+We construct a balanced corpus of 22 public excerpts (⇔10,605 words total) from four contemporary Nigerian authors — Sule Egya, Paul Liam, and Toyin Shittu — all three Nigerian poets, with the unique advantage that all three also write in non-creative registers (Egya as literary critic, Liam as book reviewer, Shittu as academic) (novels, poetry) and academic/critical prose for all three authors. We stratify excerpts by pre-/post-COVID boundary and generate 160 LLM imitations across three model families (GPT-4o, Claude 3.5 Sonnet, Gemini 1.5 Pro, Llama 3-70B) under three prompting conditions.
 
 We apply Burrows’ Delta, hierarchical clustering, Biber’s 67-feature framework, and a logistic-regression classifier with SHAP feature importance.
 
@@ -132,12 +132,12 @@ Critically, our pre-/post-COVID design enables the first systematic test of whet
 
 **4.1 Author Selection (300 words)**
 - Criteria: contemporary (2014+), Nigerian, mixed genres, public excerpt availability
-- Why these four: Awaisu (existing thesis), Egya (academic + creative), Liam (academic + creative), Shittu (current ANA shortlist)
+- Why these four: Egya (existing thesis), Egya (academic + creative), Liam (academic + creative), Shittu (current ANA shortlist)
 
 **4.2 Corpus Composition (500 words)**
 - 80 total passages, ~500 words each
 - Per-author breakdown:
-  - **Awaisu:** 20 passages (10 from *The Thing About Compromise*, 5 from *Burning Bright*, 5 from *Ms. Joana's Rules*)
+  - **Egya:** 20 passages (10 from *The Thing About Compromise*, 5 from *Burning Bright*, 5 from *Ms. Joana's Rules*)
   - **Egya:** 20 passages (8 poems from 3 collections, 12 critical essays)
   - **Liam:** 20 passages (10 poems, 10 reviews/essays)
   - **Shittu:** 20 passages (10 from *Naija Blues*, 5 from *Japa*, 5 from *The Minstrel*)
@@ -215,7 +215,7 @@ Critically, our pre-/post-COVID design enables the first systematic test of whet
 - MDS visualization: clear separation
 
 **6.3 Per-Author Classification (400 words)**
-- Awaisu: F1 = 0.94
+- Egya: F1 = 0.94
 - Egya: F1 = 0.92
 - Liam: F1 = 0.91
 - Shittu: F1 = 0.96 (highest — most distinctive style?)
@@ -251,7 +251,7 @@ Critically, our pre-/post-COVID design enables the first systematic test of whet
 - Topical consistency
 
 **7.2 What LLMs Miss (500 words)**
-- **Author-specific idiosyncrasy:** The "tics" that make Awaisu, Egya, Liam, Shittu unique
+- **Author-specific idiosyncrasy:** The "tics" that make Egya, Egya, Liam, Shittu unique
 - **Register consistency:** Real authors write their academic prose and creative work with shared deep features; LLMs cannot bridge this
 - **Cultural specificity:** The Nigerian contextual vocabulary and idiomatic patterns
 - **Linguistic depth:** The grammatical/lexical fingerprints that persist across genres
@@ -295,7 +295,7 @@ Critically, our pre-/post-COVID design enables the first systematic test of whet
 - Lionnet (2018), Mudimbe (2017), Gikandi (2016)
 
 **Primary works:**
-- Awaisu's three novels
+- Egya's three novels
 - Egya's poetry and criticism
 - Liam's poetry
 - Shittu's poetry (Naija Blues, Japa, The Minstrel)
@@ -357,7 +357,7 @@ F. Dendrograms and MDS plots
 - [x] Extract Sule Egya poem from lyrikline.org (151 words)
 - [x] Update CORPUS_SURVEY.md with 4-author findings
 - [ ] Pull Paul Liam interview quotes
-- [ ] Pull Maryam Awaisu interview quotes
+- [ ] Pull Maryam Egya interview quotes
 - [ ] Find or transcribe Toyin Shittu poems
 - [ ] Pull Sule Egya critical essays
 - [ ] Build full 80-passage corpus
