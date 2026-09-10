@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite the paper and code as below."
+title: "The Computable Voice: Forensic Stylometry of Four Contemporary Nigerian Authors Tested Against LLM Imitations"
+type: software
+date-released: 2026-09-10
+version: 0.1.0
+
+authors:
+  - family-names: Raji
+    given-names: Rabiu
+    orcid: https://orcid.org/0009-0007-8968-8620
+    affiliation: "Independent researcher, Ilorin, Nigeria"
+
+keywords:
+  - stylometry
+  - Burrows' Delta
+  - Biber features
+  - LLM detection
+  - Nigerian literature
+  - forensic authorship attribution
+  - Maryam Awaisu
+  - Sule Egya
+  - Paul Liam
+  - Toyin Shittu
+
+license: MIT
+repository-code: https://github.com/Rawbeew/nigerian-forensic-stylistics

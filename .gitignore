@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb.bak
+
+# Data — corpus, model outputs, results
+corpus/private/
+data/private/
+pipeline/output/
+pipeline/models/
+*.pt
+*.bin
+*.safetensors
+
+# Generated figures (rebuild from notebook)
+figures/*.png
+figures/*.pdf
+
+# Logs
+*.log
+*.txt~
+*~
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
+*.secret
+*.key
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+desktop.ini
+
+# Large files
+*.zip
+*.tar.gz
