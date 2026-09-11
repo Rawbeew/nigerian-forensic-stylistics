@@ -1,0 +1,86 @@
+{
+  "egya_human": {
+    "n": 10,
+    "means": {
+      "n_words": 438.6,
+      "n_sents": 21.8,
+      "mean_sentence_len_chars": 151.013,
+      "sent_len_std": 114.525,
+      "ttr": 0.5941,
+      "mean_word_len": 4.6155,
+      "punct_density_per_word": 0.1431,
+      "function_word_ratio": 0.3944,
+      "mean_syllables_per_word": 1.6543
+    },
+    "stdevs": {
+      "mean_sentence_len_chars": 84.6319,
+      "ttr": 0.1142,
+      "mean_word_len": 0.2429,
+      "function_word_ratio": 0.0384,
+      "mean_syllables_per_word": 0.0864
+    }
+  },
+  "shittu_human": {
+    "n": 6,
+    "means": {
+      "n_words": 498.8333,
+      "n_sents": 24.6667,
+      "mean_sentence_len_chars": 146.675,
+      "sent_len_std": 109.4067,
+      "ttr": 0.5424,
+      "mean_word_len": 5.303,
+      "punct_density_per_word": 0.1661,
+      "function_word_ratio": 0.3184,
+      "mean_syllables_per_word": 1.9397
+    },
+    "stdevs": {
+      "mean_sentence_len_chars": 41.2751,
+      "ttr": 0.0457,
+      "mean_word_len": 0.2931,
+      "function_word_ratio": 0.0203,
+      "mean_syllables_per_word": 0.1191
+    }
+  },
+  "egya_llm": {
+    "n": 8,
+    "means": {
+      "n_words": 102.125,
+      "n_sents": 2.625,
+      "mean_sentence_len_chars": 210.4787,
+      "sent_len_std": 108.9638,
+      "ttr": 0.7674,
+      "mean_word_len": 4.367,
+      "punct_density_per_word": 0.1203,
+      "function_word_ratio": 0.4016,
+      "mean_syllables_per_word": 1.4445
+    },
+    "stdevs": {
+      "mean_sentence_len_chars": 63.127,
+      "ttr": 0.0622,
+      "mean_word_len": 0.1855,
+      "function_word_ratio": 0.0368,
+      "mean_syllables_per_word": 0.0615
+    }
+  },
+  "shittu_llm": {
+    "n": 8,
+    "means": {
+      "n_words": 228.0,
+      "n_sents": 10.5,
+      "mean_sentence_len_chars": 127.8475,
+      "sent_len_std": 66.4687,
+      "ttr": 0.6425,
+      "mean_word_len": 4.7854,
+      "punct_density_per_word": 0.1641,
+      "function_word_ratio": 0.4074,
+      "mean_syllables_per_word": 1.7254
+    },
+    "stdevs": {
+      "mean_sentence_len_chars": 12.1675,
+      "ttr": 0.0345,
+      "mean_word_len": 0.1948,
+      "function_word_ratio": 0.0372,
+      "mean_syllables_per_word": 0.1037
+    }
+  }
+}
