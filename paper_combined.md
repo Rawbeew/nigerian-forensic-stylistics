@@ -7,7 +7,7 @@
 
 **Repository:** <https://github.com/Rawbeew/nigerian-forensic-stylistics>
 
-**Status:** Preprint (in preparation for arXiv submission)
+**Status:** Preprint
 
 ---
 

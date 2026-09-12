@@ -9,7 +9,7 @@
 
 **Repository:** <https://github.com/Rawbeew/nigerian-forensic-stylistics>
 
-**Status:** Preprint (in preparation for arXiv submission)
+**Status:** Preprint
 
 **Keywords:** forensic stylometry, authorship attribution, large language models, Nigerian literature, lexical diversity, computational linguistics
 

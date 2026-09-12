@@ -7,12 +7,12 @@ Poets}\label{voice-or-mask-stylometric-forensic-analysis-of-two-contemporary-nig
 \textbf{Authors:} Rabiu Raji (ORCID
 \href{https://orcid.org/0009-0007-8968-8620}{0009-0007-8968-8620})
 
-\textbf{Date:} September 2026 (preprint v9)
+\textbf{Date:} September 2026
 
 \textbf{Repository:}
 \url{https://github.com/Rawbeew/nigerian-forensic-stylistics}
 
-\textbf{Status:} Draft preprint v9
+\textbf{Status:} Preprint
 
 \textbf{Keywords:} forensic stylometry, authorship attribution, large
 language models, Nigerian literature, lexical diversity, computational
@@ -24,25 +24,25 @@ linguistics
 
 The era of fluent large language models has destabilised a long-standing
 assumption in authorship attribution: that a writer's surface features
-are difficult to imitate at scale. We test that assumption against two
-contemporary Nigerian poets, Sule Egya (E.E. Sule) and Toyin Shittu,
-whose published work spans poetry, critical prose, and academic articles
-from 2009 to 2025. The corpus is public. Sixteen human passages (7,151
-words) and sixteen LLM imitations (2,623 words) were produced across two
-free-tier models (nex-agi/nex-n2.5-mini and nex-nagi/nex-n2.5-pro via
-OpenRouter). Stylometric features per passage include sentence length
-distribution, type-token ratio, mean word length, punctuation density,
-function-word ratio, and a vowel-group syllable estimate. Across both
-authors the LLM imitations show measurably higher type-token ratio
-(lexical diversity) and lower mean syllables per word than the human
-originals. For Egya, human TTR is 0.59 against LLM 0.77; syllables drop
-from 1.65 to 1.44. For Shittu, human TTR is 0.54 against LLM 0.64;
-syllables drop from 1.94 to 1.73. The lexical signature holds across
-both authors and both models. We argue that these signals support the
-continued forensic defensibility of authorship attribution in the era of
-fluent LLMs, while acknowledging the scope-bound constraints: a
-16-passage corpus per condition and two LLM providers tested. A larger
-multi-model evaluation is future work.
+are difficult to imitate at scale. This paper tests that assumption
+against two contemporary Nigerian poets, Sule Egya (E.E. Sule) and Toyin
+Shittu, whose published work spans poetry, critical prose, and academic
+articles from 2009 to 2025. The corpus is public. Sixteen human passages
+(7,151 words) and sixteen LLM imitations (2,623 words) were produced
+across two free-tier models (nex-agi/nex-n2.5-mini and
+nex-nagi/nex-n2.5-pro via OpenRouter). Stylometric features per passage
+include sentence length distribution, type-token ratio, mean word
+length, punctuation density, function-word ratio, and a vowel-group
+syllable estimate. Across both authors the LLM imitations show
+measurably higher type-token ratio (lexical diversity) and lower mean
+syllables per word than the human originals. For Egya, human TTR is 0.59
+against LLM 0.77; syllables drop from 1.65 to 1.44. For Shittu, human
+TTR is 0.54 against LLM 0.64; syllables drop from 1.94 to 1.73. The
+lexical signature holds across both authors and both models. I argue
+that these signals support the continued forensic defensibility of
+authorship attribution in the era of fluent LLMs, while acknowledging
+the scope-bound constraints: a 16-passage corpus per condition and two
+LLM providers tested. A larger multi-model evaluation is future work.
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
@@ -60,9 +60,9 @@ what anchors of human authorship survive?
 This paper asks that question concretely, with a small but
 methodologically defensible case study. Two contemporary Nigerian poets.
 Their published work spans a decade and a half. Against their styles two
-commercial-grade LLMs are asked to imitate. We treat the question
-empirically rather than philosophically. We are not asking whether
-authorship is ``real'' in some metaphysical sense; we are asking whether
+commercial-grade LLMs are asked to imitate. I treat the question
+empirically rather than philosophically. I am not asking whether
+authorship is ``real'' in some metaphysical sense; I am asking whether
 the measurable features of an author's text can be distinguished from a
 plausible machine imitation under realistic conditions.
 
@@ -90,23 +90,23 @@ detail}\label{research-questions-in-detail}
 long-established measure of vocabulary diversity per fixed-length text
 (Mosteller and Wallace, 1964; Tweedie and Baayen, 1998). LLMs trained on
 broad web corpora are not, in principle, constrained to the lexical
-profile of any one author. We test whether, in practice, a prompted LLM
+profile of any one author. I test whether, in practice, a prompted LLM
 narrows its output to the target author's TTR or expands beyond it.
 
 \textbf{RQ2: Syllable-length distribution.} Mean syllables per word
 captures polysyllabic vocabulary, a stylistic register marker (Biber,
 1988). Literary authors and academic authors differ in how polysyllabic
-their vocabulary tends to be; we test whether LLMs preserve the target
+their vocabulary tends to be; I test whether LLMs preserve the target
 author's profile or substitute shorter, more common words.
 
 \textbf{RQ3: Cross-author generalisation.} A lexical signature that
-holds for one author might fail on another. We test whether the same
+holds for one author might fail on another. I test whether the same
 lexical features discriminate human from LLM for both authors, despite
 their distinct cultural and academic profiles.
 
 \textbf{RQ4: Cultural idiom.} Each author's text carries vocabulary
 specific to its cultural context. Egya deploys Igbo and Yoruba terms;
-Shittu uses critical-theoretical vocabulary. We test whether LLMs
+Shittu uses critical-theoretical vocabulary. I test whether LLMs
 prompted with a target author's style replicate these culturally
 specific vocabularies or revert to a default English-vocabulary profile.
 
@@ -145,7 +145,7 @@ misclassify non-native English writing as AI-generated, with a 61\%
 false-positive rate on TOEFL essays. Weber-Wulff et al.~(2023) tested 14
 publicly available detection tools and two commercial systems (Turnitin,
 PlagiarismCheck) and found none of them reliable enough for academic
-misconduct decisions. We take the position that the more rigorous
+misconduct decisions. I take the position that the more rigorous
 empirical question, does the imitator's output leave a measurable
 signature, is not yet well answered for literary authorship,
 particularly for non-Anglophone literary traditions.
@@ -392,7 +392,7 @@ the human authors choose words for density and weight, the LLMs choose
 words for variety. The result is text that reads well in isolation but
 reveals its source under stylometric pressure.
 
-We argue that these results support the continued forensic defensibility
+I argue that these results support the continued forensic defensibility
 of authorship attribution in the era of fluent LLMs, with three caveats.
 
 \subsubsection{7.1 Corpus size}\label{corpus-size}
