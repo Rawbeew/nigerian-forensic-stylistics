@@ -6,7 +6,7 @@ This is the submission bundle for arXiv cs.CL.
 
 - `paper.tex` — Pandoc-generated LaTeX source
 - `paper.pdf` — Generated PDF for first-submission use (if not generating LaTeX-built PDF locally)
-- `paper_v9.md` — Markdown source (in parent directory)
+- `paper.md` — Markdown source (in parent directory)
 
 ## Metadata for arXiv submission form
 
