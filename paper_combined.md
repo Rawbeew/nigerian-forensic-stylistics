@@ -2,7 +2,6 @@
 
 **Authors:** Rabiu Raji (ORCID [0009-0007-8968-8620](https://orcid.org/0009-0007-8968-8620))
 
-**Affiliation:** Independent researcher, Ilorin, Nigeria
 
 **Date:** September 2026
 
