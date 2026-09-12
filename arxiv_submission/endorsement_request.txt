@@ -1,0 +1,28 @@
+Subject: arXiv endorsement request (cs.CL) — short, 16-page stylometry preprint
+
+Hi [Name],
+
+Hope you and the family are well. I'm writing because arXiv has tightened its endorsement policy this year, and I'm asking for a 30-second click.
+
+**What I'm asking:** arXiv endorsement for a single submission to cs.CL (Computation and Language). Endorsement is an arXiv system where an established author in the field confirms that the submission is real research by a real person in the field. It is not peer review, not co-authorship, not vouching for content quality.
+
+**What you would do:** arXiv will email you a single-click link. Click "yes" or "no." That's it.
+
+**The paper:** "Voice or Mask? Stylometric Forensic Analysis of Two Contemporary Nigerian Poets" — a small controlled test of whether basic stylometric features (type-token ratio, syllable length, punctuation density) still distinguish human-authored text from LLM imitations after GPT-3/4. Two authors, two free-tier models, public corpus, lightweight features, public code. The headline finding is small but clean: LLMs use measurably wider vocabulary and shorter, less polysyllabic words than the humans they imitate, across both authors and both models tested.
+
+**Why you specifically:** You have published in cs.CL and have endorsement privileges in that domain. Your name will not appear on the paper; you will not be asked to review it; you are not vouching for content quality. You are simply confirming that this submission is from a working researcher in the field, not random text generation.
+
+**What to do:**
+
+1. arXiv will email you a request titled "arXiv endorsement request from [your name]" once I start the submission. The email contains a one-click link.
+2. Click yes or no. That's the entire endorsement.
+
+**Backup if you'd rather not:** I have a separate path through a different field-adjacent researcher. No pressure at all.
+
+**If you want to look first (optional):** The paper PDF is at https://github.com/Rawbeew/nigerian-forensic-stylistics/blob/main/paper_v9.pdf. Skip this if you'd rather not.
+
+**My ORCID:** 0009-0007-8968-8620
+
+Thanks for considering.
+
+Rabiu
