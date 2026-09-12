@@ -15,7 +15,7 @@ This preprint applies a lightweight stylometric feature set (type-token ratio, m
 
 | Author | Domain | Why included |
 |---|---|---|
-| Sule Egya (E.E. Sule) | Born 1976, Benue State; PhD University of Abuja; Associate Professor, IBB University, Lapai, Niger State | Writes poetry, critical essays, and journalism across a 13-year span; pre- and post-COVID-19 work available; heavy Igbo and Yoruba idiom embedded in literary-critic prose |
+| Sule Egya (E.E. Sule) | Research Professor, University of Duisburg-Essen (appointed April 2026); formerly Associate Professor, IBB University, Lapai, Niger State (2014–2026); born 1976, Benue State; PhD University of Abuja | Writes poetry, critical essays, and journalism across a 13-year span; pre- and post-COVID-19 work available; heavy Igbo and Yoruba idiom embedded in literary-critic prose |
 | Toyin Shittu | Poet and academic; ANA 2025 shortlist (Kin Mayaomi Visionary Literature Prize) | Writes poetry, academic articles, and news coverage; post-2020 academic register with no Igbo or Yoruba idiom; provides cross-author generalisation test |
 
 ## Repository structure
@@ -84,8 +84,8 @@ DOI: **10.5281/zenodo.22725022**
 **Available at:**
 - Zenodo (canonical DOI): https://zenodo.org/records/22725022
 - GitHub (repository): https://github.com/Rawbeew/nigerian-forensic-stylistics
-- ResearchGate
-- Academia.edu
+- ResearchGate: https://www.researchgate.net/publication/414253795
+- Academia.edu: https://www.academia.edu/175437423/Voice_or_Mask
 
 **Chicago author-date:**
 
