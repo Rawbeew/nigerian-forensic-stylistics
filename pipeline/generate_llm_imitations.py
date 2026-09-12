@@ -50,7 +50,7 @@ TARGET_WORDS = 250
 
 
 def _load_env():
-    """Load API keys from a local .env file. Skips Hermes install paths."""
+    """Load API keys from a local .env file. Does not search system locations."""
     candidates = [
         Path(__file__).resolve().parent.parent / ".env",
         Path.home() / ".env",
