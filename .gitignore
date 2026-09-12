@@ -1,3 +1,10 @@
+# Internal SOP / arXiv workflow / endorsement correspondence — never public
+arxiv_submission/
+corpus/raw/
+email_to_friend.txt
+paper_abstract.txt
+*.bak
+
 # Python
 __pycache__/
 *.py[cod]
