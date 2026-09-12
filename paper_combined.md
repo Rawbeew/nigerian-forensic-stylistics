@@ -13,7 +13,7 @@
 
 ## Abstract
 
-The era of fluent large language models has destabilised a long-standing assumption in authorship attribution: that a writer's surface features are difficult to imitate at scale. We test that assumption against two contemporary Nigerian poets, Sule Egya (E.E. Sule) and Toyin Shittu, whose published work spans poetry, critical prose, and academic articles from 2009 to 2025. The corpus is public. Sixteen human passages (7,151 words) and sixteen LLM imitations (2,623 words) were produced across two free-tier models (nex-agi/nex-n2.5-mini and nex-nagi/nex-n2.5-pro via OpenRouter). Stylometric features per passage include sentence length distribution, type-token ratio, mean word length, punctuation density, function-word ratio, and a vowel-group syllable estimate. Across both authors the LLM imitations show measurably higher type-token ratio (lexical diversity) and lower mean syllables per word than the human originals. For Egya, human TTR is 0.59 against LLM 0.77; syllables drop from 1.65 to 1.44. For Shittu, human TTR is 0.54 against LLM 0.64; syllables drop from 1.94 to 1.73. The lexical signature holds across both authors and both models. We argue that these signals support the continued forensic defensibility of authorship attribution in the era of fluent LLMs, while acknowledging the scope-bound constraints: a 16-passage corpus per condition and two LLM providers tested. A larger multi-model evaluation is future work.
+The era of fluent large language models has destabilised a long-standing assumption in authorship attribution: that a writer's surface features are difficult to imitate at scale. This paper tests that assumption against two contemporary Nigerian poets, Sule Egya (E.E. Sule) and Toyin Shittu, whose published work spans poetry, critical prose, and academic articles from 2009 to 2025. The corpus is public. Sixteen human passages (7,151 words) and sixteen LLM imitations (2,623 words) were produced across two free-tier models (nex-agi/nex-n2.5-mini and nex-nagi/nex-n2.5-pro via OpenRouter). Stylometric features per passage include sentence length distribution, type-token ratio, mean word length, punctuation density, function-word ratio, and a vowel-group syllable estimate. Across both authors the LLM imitations show measurably higher type-token ratio (lexical diversity) and lower mean syllables per word than the human originals. For Egya, human TTR is 0.59 against LLM 0.77; syllables drop from 1.65 to 1.44. For Shittu, human TTR is 0.54 against LLM 0.64; syllables drop from 1.94 to 1.73. The lexical signature holds across both authors and both models. I argue that these signals support the continued forensic defensibility of authorship attribution in the era of fluent LLMs, while acknowledging the scope-bound constraints: a 16-passage corpus per condition and two LLM providers tested. A larger multi-model evaluation is future work.
 
 ---
 
@@ -23,15 +23,15 @@ The era of fluent large language models has destabilised a long-standing assumpt
 
 When LLMs produce text that reads like a particular author, what survives of authorship forensics? Surface features (sentence rhythm, vocabulary, paragraph shape) are now reproducible by any fluent model. The deeper question is whether anything measurable in the output still distinguishes machine imitation from the author it imitates.
 
-### What we did
+### What I did
 
 Built a public corpus of 16 published passages by two contemporary Nigerian poets (7,151 words) and generated 16 LLM imitations (2,623 words) using two free-tier models (nex-agi/nex-n2.5-mini and nex-nagi/nex-n2.5-pro via OpenRouter). Each model received the same per-author system prompt describing documented stylistic markers and a single short exemplar passage. The imitations are stored alongside the human corpus and the analysis pipeline; everything is reproducible from `pipeline/analyze_basic.py`.
 
-### What we measured
+### What I measured
 
 Nine lightweight stylometric features per passage: type-token ratio, mean syllables per word, sentence length distribution, mean word length, punctuation density, function-word ratio. Pure-stdlib, no external NLP dependencies.
 
-### What we found
+### What I found
 
 Across both authors, LLM imitations show **higher type-token ratio** (lexical diversity) and **lower mean syllables per word** (avoidance of polysyllabic vocabulary) than the human originals.
 
