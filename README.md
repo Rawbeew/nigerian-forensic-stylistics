@@ -35,8 +35,7 @@ This preprint applies a lightweight stylometric feature set (type-token ratio, m
 ├── LICENSE                 # Code: MIT; Manuscript: CC-BY-4.0
 ├── corpus/                 # 16 human-authored source files + metadata
 ├── pipeline/               # Jupyter notebook + LLM prompt documentation
-├── results_v9/             # Generated figures and tables
-└── arxiv_submission/       # Submission bundle (PDF + LaTeX + README + endorsement request template)
+└── results_v9/             # Generated figures and tables
 ```
 
 ## Cohort details
@@ -82,20 +81,26 @@ The analysis pipeline is a six-cell Colab notebook. Open `pipeline/stylometric_p
 
 DOI: **10.5281/zenodo.22725022**
 
-## Citation
+**Available at:**
+- Zenodo (canonical DOI): https://zenodo.org/records/22725022
+- GitHub (repository): https://github.com/Rawbeew/nigerian-forensic-stylistics
+- ResearchGate
+- Academia.edu
 
+**Chicago author-date:**
 
-If you use this work, please cite:
+> Raji, Rabiu. 2026. "Voice or Mask? Stylometric Forensic Analysis of Two Contemporary Nigerian Poets." Preprint. Zenodo. https://zenodo.org/records/22725022.
+
+**BibTeX:**
 
 ```bibtex
 @misc{raji2026voice,
-  author = {Raji, Rabiu},
-  title = {Voice or Mask? Stylometric Forensic Analysis of Two Contemporary Nigerian Poets},
-  year = {2026},
-  publisher = {GitHub},
-  journal = {GitHub repository},
-  howpublished = {\url{https://github.com/Rawbeew/nigerian-forensic-stylistics}},
-  note = {Preprint}
+  author       = {Raji, Rabiu},
+  title        = {Voice or Mask? Stylometric Forensic Analysis of Two Contemporary Nigerian Poets},
+  year         = {2026},
+  publisher    = {Zenodo},
+  howpublished = {\\url{https://zenodo.org/records/22725022}},
+  note         = {Preprint}
 }
 ```
 
