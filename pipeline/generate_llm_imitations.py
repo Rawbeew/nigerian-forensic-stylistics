@@ -50,11 +50,10 @@ TARGET_WORDS = 250
 
 
 def _load_env():
-    """Load API keys from a known .env file. Falls back to os.environ."""
+    """Load API keys from a local .env file. Skips Hermes install paths."""
     candidates = [
-        Path(__file__).resolve().parent.parent.parent.parent / "AppData" / "Local" / "hermes" / ".env",
-        Path.home() / ".env",
         Path(__file__).resolve().parent.parent / ".env",
+        Path.home() / ".env",
     ]
     for env_path in candidates:
         if not env_path.exists():
