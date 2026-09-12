@@ -80,6 +80,11 @@ The analysis pipeline is a six-cell Colab notebook. Open `pipeline/stylometric_p
 
 ## Citation
 
+DOI: **10.5281/zenodo.22725022**
+
+## Citation
+
+
 If you use this work, please cite:
 
 ```bibtex

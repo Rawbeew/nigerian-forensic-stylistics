@@ -8,6 +8,7 @@
 **Repository:** <https://github.com/Rawbeew/nigerian-forensic-stylistics>
 
 **Status:** Preprint
+**DOI:** 10.5281/zenodo.22725022 (https://zenodo.org/records/22725022)
 
 ---
 
