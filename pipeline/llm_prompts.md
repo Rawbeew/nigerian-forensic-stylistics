@@ -1,104 +1,86 @@
 # LLM Generation Prompts
 
-This file documents the prompt conditions used to generate LLM imitations of the four authors in the corpus. Used in Colab Cell 3 of the stylometric pipeline.
+This file documents the prompt conditions used to generate LLM imitations of the two authors in the corpus. Used in Colab Cell 3 of the stylometric pipeline.
 
 ## Configuration
 
-- **Models:** GPT-4o, Claude 3.5 Sonnet, Gemini 1.5 Pro, Llama 3-70B
-- **Per model × per author:** 10 passages
-- **Total synthetic passages:** 4 models × 3 authors × 10 = 120
-- **Generation parameters:** temperature 0.7, top-p 1.0, max_tokens 750
+- **Models:** Two OpenRouter models: `nex-agi/nex-n2.5-mini` and `nex-agi/nex-n2.5-pro`
+- **Per model × per author:** 4 passages per author per model
+- **Total synthetic passages:** 2 models × 2 authors × 4 = 16
+- **Generation parameters:** temperature 0.01 (near-deterministic), top-p 1.0, max_tokens ~750
 
 ## Prompt Conditions
 
-### P1 — Generic style imitation
+### P1 — Author-specific imitation
 
 ```
-Write a 500-word literary fiction passage in the style of {author_name}, 
-a contemporary Nigerian writer known for {author_genre}. Capture their 
-typical sentence rhythm, vocabulary, and thematic preoccupations.
+Write a 250-word literary passage in the style of {author_name},
+a contemporary Nigerian poet/writer. Capture the typical sentence
+rhythm, vocabulary, and thematic preoccupations of their published
+work as documented in the corpus.
 ```
 
-### P2 — Genre-specific imitation
+### P2 — Topic-seeded imitation
 
-For poets (Egya, Liam, Shittu):
-```
-Write 500 words of contemporary Nigerian poetry in the voice of {author_name}. 
-Use their typical line lengths, imagery, and structural patterns. Aim for 
-the rhythms and themes characteristic of their published work.
-```
+For each author, an exemplar passage from the corpus is provided; the
+LLM is asked to write a passage on the same topic in the same author's
+style. Used for Egya and Shittu separately.
 
 ```
-Write 500 words of contemporary Nigerian prose fiction in the voice of 
-{author_name}, who writes about {themes}. Capture the novelistic texture 
-and cultural setting characteristic of her published work.
+You are given an example passage in the style of {author_name}.
+Write a new 250-word passage on {topic_seed}, keeping the same
+sentence rhythm, vocabulary level, and cultural register as the
+example.
 ```
 
-### P3 — Themed free generation
+## Per-Author Specifications
 
-```
-Write 500 words of contemporary Nigerian literary prose about {theme}, 
-in a style appropriate for a literary journal. Focus on the texture of 
-ordinary Nigerian life and the tensions between tradition and modernity.
-```
+### Sule Egya (E.E. Sule)
 
-Themes (cycled through):
-- migration and japa
-- illness and resilience
-- love and family
-- rural-urban tension
-- religion and identity
-
-## Per-Author Author-Specific Prompt Extensions
-
-### Sule Egya / E.E. Sule
-- Themes: environmental degradation, Niger Delta, political corruption, national identity
-- Style: dense figurative language, nature imagery, protest undertones
-- Reference works: *Sterile Sky*, *Makwala*, *What the Sea Told Me*, *Nation, Power and Dissidence*
-
-### Paul Liam
-- Themes: barracks life, Tiv culture, religion and ethnic polarization, emerging northern voices
-- Style: compact lines, often direct, journalistic clarity
-- Reference works: *Indefinite Cravings*, *Saint Sha'ade and Other Poems*
+- Themes: environmental degradation, Niger Delta politics, national
+  identity, communal land, Tiv and Igbo cultural vocabulary
+- Style: dense figurative language, nature imagery, mid-paragraph
+  rhythm shifts, embedded Igbo and Yoruba terms (chi, ala, ndi, ile)
+- Reference works: *Crippled Earth*, *Stateless Bay*, *Nation, Power
+  and Dissidence*, *Threshing the Grains*
 
 ### Toyin Shittu
-- Themes: japa, migration, national disillusionment, historical memory
-- Style: time-spanning structure, metaphorical density, ironic tone
-- Reference works: *Niger Blues and other Poems*, *The Crash*, *Japa: Elegy for Nigerians*
+
+- Themes: Nigerian civil war memory, japa, migration, academic
+  discourse on metaphor, post-2020 disillusionment
+- Style: academic register, mid-length sentences, critical-theoretical
+  vocabulary, ironic tone
+- Reference works: *Metaphor in Nigerian Civil War Poetry*, ANA 2025
+  shortlist coverage
 
 ## Implementation
 
-See `stylometric_pipeline.ipynb` Cell 3 for the implementation. The `generate()` function tries each provider in order:
+See `stylometric_pipeline.ipynb` Cell 3 for the implementation. The
+`generate()` function tries each model in order:
 
 ```python
-def generate(prompt, model="default"):
-    """Try each provider in order until one works."""
-    for fn, m in [
-        (lambda p: generate_groq(p), "llama-3.1-70b"),
-        (lambda p: generate_openrouter(p), "llama-3-70b"),
-    ]:
-        result = fn(prompt)
-        if result:
-            return result, m
-    return None, None
+def generate(prompt, model="nex-n2.5-mini"):
+    """Try the requested model via OpenRouter."""
+    return call_openrouter(prompt, model)
 ```
 
 ## Rate Limiting
 
-- Groq free tier: 30 requests/minute
 - OpenRouter free tier: 20 requests/minute
 - Set `time.sleep(0.5)` between requests to avoid rate limit issues
 
 ## Cost
 
-All providers have free tiers sufficient for 120 generations. Estimated cost: $0.00.
+OpenRouter free tier is sufficient for 16 generations. Cost: $0.00.
 
 ## Output
 
-Generated passages are saved to `pipeline/output/synthetic_corpus.csv` with columns:
-- `id` (synth_P1_001, etc.)
-- `prompt_id` (P1, P2, or P3)
-- `model` (gpt-4o, claude-3.5, gemini-1.5, or llama-3-70b)
+Generated passages are saved to `corpus/synthetic/` with corresponding
+metadata in `corpus/synthetic_metadata.csv`. Columns:
+
+- `id` (synth_001, etc.)
+- `author` (egya or shittu)
+- `model` (nex-n2.5-mini or nex-n2.5-pro)
+- `topic_seed` (the seed used for that passage)
 - `text` (the generated passage)
 - `generation_timestamp` (ISO format)
-- `seed` (random seed if available)

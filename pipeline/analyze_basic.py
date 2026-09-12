@@ -22,8 +22,8 @@ from collections import Counter
 from pathlib import Path
 
 
-CORPUS_ROOT = Path("/home/rabiu/nigerian-forensic-stylistics/corpus")
-LLM_DIR = CORPUS_ROOT / "llm"
+CORPUS_ROOT = Path(__file__).resolve().parent.parent / "corpus"
+LLM_OUT = CORPUS_ROOT / "synthetic"
 
 
 # Tiny English function-word list. Stopwords only - no need for accuracy here.
@@ -137,7 +137,7 @@ def gather_corpus() -> list:
         })
 
     # LLM corpus
-    llm_dir = CORPUS_ROOT / "llm"
+    llm_dir = CORPUS_ROOT / "synthetic"
     if llm_dir.exists():
         for f in sorted(llm_dir.glob("*.txt")):
             if f.name.startswith('_'):

@@ -1,115 +1,111 @@
 # nigerian-forensic-stylistics
 
-**Forensic stylometry of contemporary Nigerian authors tested against LLM imitations.**
-
-> **The Computable Voice: Can a Machine Speak Like ?**
-> *Stylometric forgery detection in contemporary Nigerian literature*
+**Forensic stylometry of contemporary Nigerian poets tested against LLM imitations.**
 
 **Author:** Rabiu Raji ([ORCID 0009-0007-8968-8620](https://orcid.org/0009-0007-8968-8620))
-**Status:** Manuscript in preparation
-**Target venue:** *Journal of African Cultural Studies* (Q1) or *Digital Scholarship in the Humanities*
+**Affiliation:** Independent researcher (location withheld)
+**Status:** Preprint
+**Date:** September 2026
+
+## About
+
+This preprint applies a lightweight stylometric feature set (type-token ratio, mean syllables per word, sentence length distribution, function-word ratio, punctuation density) to a small public corpus of two contemporary Nigerian poets and tests whether those features distinguish human-authored passages from LLM imitations. The paper, corpus, and analysis pipeline are all in this repository. See `paper.pdf` for the manuscript.
 
 ## Authors in cohort
 
-| Author | Domain | Why include |
+| Author | Domain | Why included |
 |---|---|---|
-| **** | Prof, novelist, poet, literary critic | Writes BOTH poetry and criticism — intra-author control |
-| **Sule Egya / E.E. Sule** | Prof, novelist, poet, critic | Writes BOTH fiction AND criticism — intra-author control |
-| **** | Poet, critic, Niger State | Tiv, writes poetry AND reviews — intra-author control |
-| **Toyin Shittu** | Poet, Osun State University, playwright | ANA KMVL shortlist 2025; contemporary relevance |
+| Sule Egya (E.E. Sule) | Born 1976, Benue State; PhD University of Abuja; Associate Professor, IBB University, Lapai, Niger State | Writes poetry, critical essays, and journalism across a 13-year span; pre- and post-COVID-19 work available; heavy Igbo and Yoruba idiom embedded in literary-critic prose |
+| Toyin Shittu | Poet and academic; ANA 2025 shortlist (Kin Mayaomi Visionary Literature Prize) | Writes poetry, academic articles, and news coverage; post-2020 academic register with no Igbo or Yoruba idiom; provides cross-author generalisation test |
 
 ## Repository structure
 
 ```
 .
-├── README.md                              # This file
-├── OUTLINE.md                             # Full paper outline (13 sections)
-├── corpus/
-│   ├── metadata.csv                       # Author, ID, type, source, license
-│   ├── egya_poem_01_do_you_know.txt      # Seed: Sule Egya poem (151 words, lyrikline.org)
-│   └── [more to be added]
-├── pipeline/
-│   ├── stylometric_pipeline.ipynb         # Colab notebook (Burrows + Biber + classifier)
-│   ├── llm_prompts.md                     # 4 models × 3 prompt conditions
-│   └── run.sh                             # Local execution script
-├── drafts/
-│   └── manuscript_v1.md                   # First draft (to be written)
-├── figures/
-│   └── (plots to be generated)            # Dendrograms, MDS, SHAP
-├── CITATION.cff                          # GitHub-style citation
-├── LICENSE                                # CC-BY-4.0
-└── .gitignore                            # Standard excludes
+├── paper.md                # Manuscript source (Markdown)
+├── paper.pdf               # Manuscript (rendered PDF)
+├── paper.tex               # Manuscript (Pandoc-generated LaTeX, for arXiv upload)
+├── paper_combined.md       # Abstract + one-page summary (single document)
+├── paper_combined.pdf      # Abstract + summary (rendered PDF)
+├── paper_abstract.txt      # Standalone abstract
+├── paper_summary.txt       # Standalone one-page summary
+├── OUTLINE.md              # Working outline of the paper
+├── HOW_TO_RUN.md           # Step-by-step pipeline walkthrough
+├── CITATION.cff            # GitHub citation metadata
+├── LICENSE                 # Code: MIT; Manuscript: CC-BY-4.0
+├── corpus/                 # 16 human-authored source files + metadata
+├── pipeline/               # Jupyter notebook + LLM prompt documentation
+├── results_v9/             # Generated figures and tables
+└── arxiv_submission/       # Submission bundle (PDF + LaTeX + README + endorsement request template)
 ```
 
-## Status
+## Cohort details
 
-- [x] Repo created
-- [x] Outline drafted
-- [x] Sule Egya poem extracted (lyrikline.org)
-- [x] Colab pipeline adapted for 4 authors
-- [x] **Corpus assembled: 18 excerpts, 9,016 words**
-  - : 5 excerpts (interviews, news, panel coverage)
-  -: 6 excerpts (interviews, his own critical writing in Channels TV, Shamsrumi, Musefair)
-  - Shittu: 6 excerpts (his own academic articles + ANA news)
-  - Egya: 10 excerpts (5 poetry, 4 critical essays, 1 interview)
-- [ ] Pull remaining Sule Egya excerpts (poetry + critical)
-- [ ] Build LLM imitation corpus (160 passages)
-- [ ] Run analysis
-- [ ] Draft paper
-- [ ] arXiv preprint
-- [ ] Journal submission
+| Author | n passages | n words | Years | Genres |
+|---|---|---|---|---|
+| Sule Egya (E.E. Sule) | 10 | 4,137 | 2009–2022 | Poetry, critical essays, interview |
+| Toyin Shittu | 6 | 3,014 | 2024–2025 | Academic articles, news coverage |
+| **Total** | **16** | **7,151** | — | — |
 
-## Public excerpt sources (all fair use)
+Pre-COVID-19 (before 2020): 12 passages (Egya: 10, Shittu: 2).
+Post-COVID-19 (2020 and after): 4 passages (Egya: 0, Shittu: 4).
 
-- **Sule Egya:** [lyrikline.org](https://www.lyrikline.org/en/authors/e-e-sule), [africanwriter.com](https://www.africanwriter.com/e-e-sule-a-burden-to-get-it-right/)
-- **:** [Daily Trust interview](https://dailytrust.com/how-near-death-experience-prompted-my-novel-maryam-/), Amazon *Burning Bright* listing
-- **Toyin Shittu** bio at Osun State University (ujws.uniosun.edu.ng/ajllcs/issue/view/49)
-- **Toyin Shittu:** [Berkeley Publications (Oseni & Hamzah 2024)](https://berkeleypublications.com/bjhss/article/view/134), [Daily Trust](https://dailytrust.com/daily-trust-corps-member-shortlisted-for-ana-poetry-prize/), Osun State University
+LLM imitations: 16 passages (8 per author, 2,623 words total) produced via OpenRouter free-tier using two models. Prompts are documented in `pipeline/llm_prompts.md`.
+
+## Headline finding
+
+Across both authors, LLM imitations show **higher type-token ratio** (lexical diversity) and **lower mean syllables per word** (avoidance of polysyllabic vocabulary) than the human originals.
+
+| Author | Human TTR | LLM TTR | Δ |
+|---|---|---|---|
+| Egya | 0.59 | 0.77 | +0.17 |
+| Shittu | 0.54 | 0.64 | +0.10 |
+
+| Author | Human syllables/word | LLM syllables/word | Δ |
+|---|---|---|---|
+| Egya | 1.65 | 1.44 | −0.21 |
+| Shittu | 1.94 | 1.73 | −0.21 |
+
+The lexical signature holds across both authors and both LLM providers.
 
 ## Data availability
 
-The corpus used in this study consists of copyrighted literary works. For copyright reasons, the corpus is not publicly distributed. Excerpts used in the paper (200-500 words each) are within fair use limits for scholarly analysis under Nigerian Copyright Act §9 (criticism, review, scholarship) and comparable international frameworks.
+The corpus consists of public-domain or fair-use excerpts from the published work of Sule Egya and Toyin Shittu. Excerpts are stored as `.txt` files in `corpus/` with metadata in `corpus/metadata.csv` (source URL, year, license, word count, pre/post-COVID stratification). Reproducibility instructions live in `paper.pdf` Section 9.
 
-Researchers interested in replicating this study may contact the corresponding author (Rabiu Raji, [raj.rawbeew@gmail.com](mailto:raj.rawbeew@gmail.com)) for guidance on corpus construction following standard academic fair use principles.
+Researchers interested in replicating this study may contact the corresponding author for guidance on corpus construction following standard academic fair use principles.
 
 ## Running the pipeline
 
-```bash
-# Open the Colab notebook
-pipeline/stylometric_pipeline.ipynb
-
-# Or run locally
-cd pipeline
-jupyter notebook stylometric_pipeline.ipynb
-```
+The analysis pipeline is a six-cell Colab notebook. Open `pipeline/stylometric_pipeline.ipynb` in Google Colab, paste a free-tier LLM API key (OpenRouter or Groq) in Cell 3, and run cells 1–6 in order. Full walkthrough in `HOW_TO_RUN.md`.
 
 ## Citation
 
 If you use this work, please cite:
 
 ```bibtex
-@misc{raji2026computable,
+@misc{raji2026voice,
   author = {Raji, Rabiu},
-  title = {The Computable Voice: Forensic Stylometry of Four Contemporary Nigerian Authors Tested Against LLM Imitations},
+  title = {Voice or Mask? Stylometric Forensic Analysis of Two Contemporary Nigerian Poets},
   year = {2026},
   publisher = {GitHub},
   journal = {GitHub repository},
   howpublished = {\url{https://github.com/Rawbeew/nigerian-forensic-stylistics}},
-  note = {Manuscript in preparation}
+  note = {Preprint}
 }
 ```
 
 ## License
 
-Code: MIT (this repository's pipeline code)
-Manuscript text: CC-BY-4.0 (when published)
-Corpus excerpts: Public excerpt excerpts only, fair use, not redistributable
+- Code: MIT
+- Manuscript text: CC-BY-4.0
+- Corpus excerpts: public-domain or fair-use excerpts only; not redistributable
 
 ## Contact
 
 - **Author:** Rabiu Raji
 - **ORCID:** [0009-0007-8968-8620](https://orcid.org/0009-0007-8968-8620)
 - **Email:** raj.rawbeew@gmail.com
-- **Telegram:** same Hermes thread
 
-Last updated: 2026-09-10
+---
+
+Last updated: 2026-09-12

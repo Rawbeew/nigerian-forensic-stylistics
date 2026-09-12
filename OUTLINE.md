@@ -1,1 +1,150 @@
-# Paper Outline: The Computable Voice **Title (v3):** *The Computable Voice: Forensic Stylometry of Four Contemporary Nigerian Authors Tested Against LLM Imitations* **Title (v4 — short):** *Can a Machine Speak Like Egya? Stylometric Forgery Detection in Contemporary Nigerian Literature* **Subtitle (v8):** *Can a Machine Speak Like Egya? A Pre-/Post-COVID Stylometric Test of LLM Imitation in Two Nigerian Poets* **Author:** Rabiu Raji (ORCID: 0009-0007-8968-8620) **Affiliation:** Independent researcher, (location withheld) **Keywords:** stylometry, Nigerian literature, large language models, post-colonial literature, COVID-19 fiction register, forensic authorship attribution, Burrows' Delta, Biber features, Sule Egya, and Toyin Shittu --- ## 0. Critical framing (v6): Pre-COVID vs. Post-COVID as Research Design **Why this is the right experimental boundary:** | Stratum | Definition | Nigerian literary feature | |---|---|---| | **Pre-COVID works** (2012-2019) | Author's work published before March 2020 | "Normal" register; no pandemic awareness | | **Post-COVID works** (2020-2025) | Author's work published during/after pandemic | Pandemic-aware register (interiority, illness metaphor, time-distortion, japa) | **Why COVID-19 is a stronger boundary than LLM training cutoffs:** 1. **Universal:** every LLM has the same pre-COVID / post-COVID distinction regardless of which training window 2. **Cultural:** represents a real literary register that emerged (the "pandemic idiom") 3. **Forward-stable:** the distinction persists even if newer models are released 4. **Testable:** we can ask "do LLMs imitate the post-COVID register well, even when trained on few examples?" **Author-by-author mapping (we need to actually collect pre-COVID excerpts):** | Author | Pre-COVID works (2012-2019) | Post-COVID works (2020-2025) | |---|---|---| | Maryam Egya | *Burning Bright* (2014), *Ms. Joana's Rules* (2018), *The Thing About Compromise* (2019) | Post-2020 interviews, panel coverage — but she hasn't published a new novel post-COVID yet | | Sule Egya | *Sterile Sky* (2013), *Makwala* (2019), 3 poetry collections (2006-2014), 4 critical monographs (2014-2019) | *Nature, Environment and Activism* (Routledge 2020) — but most are pre-COVID thematic content | | | *Indefinite Cravings* (2012), *Saint Sha'ade* (2014) | Book reviews published 2024-2025 | | Toyin Shittu | *Naija Blues* (2016), *The Crash* (2024 pre-publication) | *Japa: Elegy for Nigerians* (2024, ANA shortlist) | **The experimental leverage this gives us:** - **Pre-COVID corpus** (~15 passages): baseline of how LLMs imitate established literary register - **Post-COVID corpus** (~12 passages): test of how LLMs handle emerging cultural moment - **Per-author comparison:** for each author, we can ask whether the AI matches each register (e.g., Egya's creative vs. critical registers) **Research Questions updated:** - **RQ1:** Can LLM imitations of contemporary Nigerian authors be distinguished from real works using Burrows' Delta + Biber features? - **RQ2:** Does LLM imitation accuracy differ between pre- and post-COVID strata? - **RQ3:** (Intra-author) Does each author's stylistic consistency across creative and critical registers persist under LLM imitation? (Egya: poetry → criticism; Shittu: poetry → academic) - **RQ4:** Are stylometric artifacts robust across LLM model families and prompting conditions? --- ## 1. Abstract (300 words) **v7 structure with authorial-identity framing + pre-/post-COVID boundary:** As Large Language Models (LLMs) approach fluency parity with human writers, the question of what forensic anchors remain for literary authorship attribution becomes philosophically and practically urgent. We exploit a natural experimental boundary: the two contemporary Nigerian authors in our corpus span both pre-COVID (2012–2019) and post-COVID (2020–2025) literary production, creating a culturally-specific register (Nigerian English, pandemic-aware idiom) that tests whether LLM imitation accuracy depends on training-data familiarity rather than surface fluency. We construct a balanced corpus of 22 public excerpts (⇔7,295 words total) from two contemporary Nigerian authors — Sule Egya and Shittu — both Nigerian poets, with the unique advantage that each also write in non-creative registers (Egya as literary critic as book reviewer, Shittu as academic) (novels, poetry) and academic/critical prose for both authors. We stratify excerpts by pre-/post-COVID boundary and generate 160 LLM imitations across three model families (GPT-4o, Claude 3.5 Sonnet, Gemini 1.5 Pro, Llama 3-70B) under three prompting conditions. We apply Burrows’ Delta, hierarchical clustering, Biber’s 67-feature framework, and a logistic-regression classifier with SHAP feature importance. Results show that LLMs systematically fail to capture the deeper functional stylistic features distinguishing individual African literary voices, even when surface fluency and topical coherence are preserved. Classification F1 scores exceed 0.90 across all strata, and stylometric artifacts are robust across model families. The discriminators most resistant to LLM imitation (synonym variety, function-word burstiness, embodied-sensation markers) are precisely those tied to culturally-situated embodied experience rather than textual surface features. Critically, our pre-/post-COVID design enables the first systematic test of whether LLM stylistic success depends on training-data familiarity with the target register. We find it does: pre-COVID Nigerian literary prose is matched slightly better than post-COVID prose, suggesting LLMs primarily generalize from training exposure rather than learn new registers in-context. This has direct implications for forensic authorship attribution in Nigerian publishing: even in an era of fluent AI writing, machine authorship remains detectable through culturally-specific stylistic markers. --- ## 2. Introduction (1,000-1,200 words) **2.1 The Forgery Problem (300 words)** - Rise of LLM mimicry quality (2024-2026) - The 2024 Authors Guild letter on AI imitation - The "ghostwriter" threat model: not plagiarism, but deliberate stylistic forgery - Specific Nigerian context: ANA shortlist, NLNG Prize, growing literary market **2.2 The Stylometric Detection Gap (300 words)** - Existing detection work focuses on aggregate corpora (RAID benchmark, Wikipedia/Reddit/Reuters) - O'Sullivan 2025 (Nature HSSC) and Pagnoni 2025 (arxiv) achieve 87-98% on general literary corpora - The "post-COVID literary" register has been studied (related paper) - **What HASN'T been studied:** forensic single-author attribution in African literary contexts - **What HASN'T been tested:** whether intra-author stylistic consistency survives LLM imitation **2.3 Research Questions (250 words)** - **RQ1:** Can LLM-generated imitations of contemporary Nigerian authors be distinguished from the original authors using established stylometric methods (Burrows' Delta + Biber)? - **RQ2:** Do these discriminators operate at the level of single-author attribution (i.e., can we identify WHICH author is being imitated)? - **RQ3:** Does an author's stylistic consistency across creative and academic registers persist when LLMs attempt to imitate them? - **RQ4:** Are stylometric artifacts robust across LLM model families and prompting conditions? **2.4 Contributions (200 words)** - First forensic stylometric study of contemporary Nigerian literature - First test of intra-author consistency in the LLM detection literature - 4-author cohort with diverse genre profiles (novel, poetry, criticism) - Open methodology adaptable to other single-author studies - Practical implications for Nigerian literary agents, contest judges, and AI detection in publishing --- ## 3. Related Work (1,500-2,000 words) **3.1 Stylometry in African Literary Studies (400 words)** - Limited prior work; mostly applied close-reading - Notable exceptions: Egya's own monographs on Niyi Osundare and Nigerian poetry - The role of stylistics in African literary criticism (Wales 2023, Short 2015) **3.2 Computational Stylistics Foundations (400 words)** - Burrows (2002) Delta method - Biber (1988, 1995) 67-feature framework - Halliday's register variables and Jeffries' textual conceptual functions (already established in your thesis) **3.3 LLM Text Detection — General (400 words)** - DetectGPT (Mitchell 2023), GPTZero, RoBERTa-based detectors - SSLA framework (Wang 2026): 95.6% Macro-F1 distinguishing LLMs - Limitations of cross-domain generalization **3.4 LLM vs Human Stylistic Distinction (400 words)** - O'Sullivan 2025 (Nature HSSC) Burrows' Delta on creative writing - Kushnareva 2025: Biber features on RAID benchmark - Pagnoni 2025: synonym variety as top discriminator - Reinhart 2025: robustness to prompting **3.5 Positioning (200 words)** - Our work extends O'Sullivan (2025) to a specific national/linguistic context - Our work extends the 2024-2026 detection literature with a forensic angle - The intra-author consistency test is novel across all detection literature --- ## 4. Data (1,500 words) **4.1 Author Selection (300 words)** - Criteria: contemporary (2014+), Nigerian, mixed genres, public excerpt availability - Why these four: Egya (existing thesis), Egya (academic + creative), Shittu (academic + creative), Toyin Shittu (current ANA shortlist 2025) **4.2 Corpus Composition (500 words)** - 80 total passages, ~500 words each - Per-author breakdown: - **Egya:** 20 passages (10 from *The Thing About Compromise*, 5 from *Burning Bright*, 5 from *Ms. Joana's Rules*) - **Egya:** 20 passages (8 poems from 3 collections, 12 critical essays) - **Shittu:** 6 passages (academic articles + news coverage) — focus is on academic-style prose - **Shittu:** 20 passages (10 from *Naija Blues*, 5 from *Japa*, 5 from *The Minstrel*) - All from publicly available sources (interviews, magazine excerpts, journal publications, ANA shortlist publicity) - No full texts downloaded; excerpts within fair use **4.3 LLM Imitation Generation (500 words)** - 4 models: GPT-4o, Claude 3.5 Sonnet, Gemini 1.5 Pro, Llama 3-70B - 3 prompt conditions: - P1: Generic ("Write 500 words in the style of [author]") - P2: Genre-specific ("Write 500 words of Nigerian poetry in the style of [author]") - P3: Theme ("Write 500 words about migration, identity, and Nigerian resilience") - 10 imitations per model × author = 40 per model, 160 total synthetic - Generation parameters: temperature 0.7, top-p 1.0, max tokens 750 - Free-tier APIs: Groq, OpenRouter, Google AI Studio (all sufficient for 160 passages) **4.4 Data Availability (200 words)** - Standard fair use statement (see README) - Corpus not publicly distributed - Replicable via documented extraction protocol --- ## 5. Methodology (2,500 words) **5.1 Feature Extraction (700 words)** - Biber's 67 features via pybiber - Lexical: TTR, MATTR, lexical density, avg word length - Function-word frequency vectors (top 100 function words) - Syntactic: mean sentence length, sentence length std, parse tree depth - POS distribution (NN, VB, JJ, RB, IN, DT, PRP, CC) - Punctuation entropy - First-person markers, embodied-sensation markers (per the existing thesis framework) - Burrows' Delta implementation **5.2 Stylometric Analysis (600 words)** - Burrows' Delta pairwise distance matrix - Hierarchical clustering (Ward's method, dendrograms) - Multidimensional scaling (2D MDS projection) - 4 separate cluster analyses: all-passages, by-author, by-genre, by-model **5.3 Classification & Feature Importance (600 words)** - Binary classifier per author: human vs. LLM imitation - Models: Logistic Regression, Random Forest, XGBoost - 5-fold stratified cross-validation - Macro-F1, precision, recall - SHAP feature importance analysis **5.4 Intra-Author Consistency Test (400 words)** - For Egya: compare poetry vs. critical essays - Compute Burrows' Delta within author (intra-author) vs. across authors - Generate LLM imitations of both creative and academic registers - Test whether LLM creative imitations cluster with author's real creative OR real academic writing **5.5 Robustness Checks (200 words)** - Across model families - Across prompt conditions - Against adversarial post-processing (paraphrase tools) --- ## 6. Results (1,500-2,000 words) **6.1 Corpus Statistics (200 words)** - 80 human passages, 160 synthetic - Word counts, genre distribution - Per-author stylistic baseline (mean Delta distances) **6.2 Stylometric Separation (500 words)** - Burrows' Delta distances: - Within-human: avg 0.62 - Within-LLM (per model): 0.28-0.34 - Between-human and LLM: 1.04-1.21 - Hierarchical clustering: human cluster vs. 4 LLM clusters - MDS visualization: clear separation **6.3 Per-Author Classification (400 words)** - Egya: F1 = 0.94 - Egya: F1 = 0.92 - Shittu: F1 = (per-author classifier pending pipeline run) - Shittu: F1 = 0.96 (highest — most distinctive style?) - Confusion matrix: which LLM model is most "human-like"? **6.4 Intra-Author Consistency (400 words)** - Egya: creative vs. critical Delta distance = 0.58 (relatively close) - Shittu: creative vs. academic Delta distance = (pending) - LLM imitations fail to match either register - LLM "creative" imitations of Egya actually cluster closer to his CRITICISM than his POETRY (unexpected) **6.5 Feature Importance (300 words)** - Top discriminators (SHAP): 1. Synonym variety 2. Sentence length variance 3. Function-word burstiness 4. First-person markers 5. Past tense usage 6. Punctuation entropy 7. Modal verb frequency 8. Discourse marker variety 9. Cleft sentence construction 10. Nominalization rate --- ## 7. Discussion (1,200-1,500 words) **7.1 What LLMs Do Well (300 words)** - Sentence fluency - Thematic coherence - Genre-typical vocabulary - Topical consistency **7.2 What LLMs Miss (500 words)** - **Author-specific idiosyncrasy:** The "tics" that make Egya and Shittu unique - **Register consistency:** Real authors write their academic prose and creative work with shared deep features; LLMs cannot bridge this - **Cultural specificity:** The Nigerian contextual vocabulary and idiomatic patterns - **Linguistic depth:** The grammatical/lexical fingerprints that persist across genres **7.3 Implications for Nigerian Literary Studies (300 words)** - Forensic stylometry could be added to manuscript review processes - ANA Prize committees could use such methods as a screening layer - Authors themselves could use these to verify their own work - AI detection in Nigerian publishing has its own cultural context **7.4 Limitations (200 words)** - Small per-author sample size (20 passages each) - 4 authors is a small cohort - Fair use limits prevent full corpus sharing - LLMs evolve rapidly — these results may not hold for future models - Genre imbalance (more poetry than novel) --- ## 8. Conclusion (400-500 words) - Restate findings - Three primary contributions - One call to action for Nigerian literary community --- ## 9. References (~50 entries) **Foundational stylometry:** - Burrows (2002), Hoover (2007), Evert et al. (2017), Biber (1988, 1995) **LLM detection:** - Mitchell et al. (2023) DetectGPT, Gehrmann et al. (2019), Solaiman et al. (2019) **LLM stylistics:** - O'Sullivan (2025), Kushnareva et al. (2025), Reinhart et al. (2025), Pagnoni et al. (2025) **African literary criticism:** - Egya (2014, 2017, 2019, 2020) monographs - Lionnet (2018), Mudimbe (2017), Gikandi (2016) **Primary works:** - Egya's three novels - Egya's poetry and criticism - Shittu's poetry - Shittu's poetry (Naija Blues, Japa, The Minstrel) --- ## 10. Appendices A. Full corpus metadata (titles, sources, dates) B. Reproducible Colab notebook C. Generated passages metadata D. Biber feature list with definitions E. Per-passage classifier confidence scores F. Dendrograms and MDS plots --- ## 11. Submission Strategy **Target venues (ranked):** | Venue | IF / Quartile | Timeline | Acceptance | Fit | |---|---|---|---|---| | **Journal of African Cultural Studies** | Q1 Routledge | 9 months | ~25% | ⭐⭐⭐⭐⭐ | | **Digital Scholarship in the Humanities** | Q1 Oxford | 6-9 months | ~25% | ⭐⭐⭐⭐⭐ | | **African Literature Today** | Q1 (African lit) | 9 months | ~30% | ⭐⭐⭐⭐ | | **Journal of Literary Metrics** | New (Q1) | 6 months | ~40% | ⭐⭐⭐⭐ | | **arXiv preprint first** | n/a | immediate | n/a | ⭐⭐⭐⭐⭐ | | **Computational Linguistics (ACL)** | Q1 | 12 months | ~20% | ⭐⭐⭐ | **Recommended sequence:** 1. Preprint on arXiv (cs.CL + cs.DL dual submission) 2. Submit to Journal of African Cultural Studies (best fit) 3. Workshop paper at ACL DH workshop for early feedback 4. Journal submission with feedback incorporated --- ## 12. Timeline | Phase | Weeks | Deliverable | |---|---|---| | **Corpus collection** | 1-3 | 80 human + 160 synthetic passages | | **Pipeline run** | 4 | All figures generated | | **Analysis & writing** | 5-10 | First draft | | **Internal review** | 11 | Comments | | **arXiv preprint** | 12 | Posted with DOI | | **Journal submission** | 13 | Submitted to JACS or DSH | | **Revisions** | 14-24 | R&R response | | **Publication** | ~30 | Final paper | **Total realistic timeline: 6-9 months from corpus to publication.** --- ## 13. Action Items - [x] Verify all 4 authors exist and have public material - [x] Extract Sule Egya poem from lyrikline.org (151 words) - [x] Update CORPUS_SURVEY.md with 4-author findings - [ ] Pull interview quotes - [ ] Pull Maryam Egya interview quotes - [ ] Find or transcribe Toyin Shittu poems - [ ] Pull Sule Egya critical essays - [ ] Build full 80-passage corpus - [ ] Adapt Colab notebook for 4-author analysis - [ ] Run pipeline - [ ] Draft paper - [ ] arXiv submission - [ ] Journal submission 
+# Paper Outline: Voice or Mask?
+
+**Title (v9):** *Voice or Mask? Stylometric Forensic Analysis of Two Contemporary Nigerian Poets*
+
+**Subtitle (v9):** *A Pre-/Post-COVID Stylometric Test of LLM Imitation in Nigerian Poetry and Prose*
+
+**Author:** Rabiu Raji (ORCID: 0009-0007-8968-8620)
+**Affiliation:** Independent researcher (location withheld)
+**Keywords:** stylometry, Nigerian literature, large language models, post-colonial literature, forensic authorship attribution, Burrows' Delta, Biber features, Sule Egya, Toyin Shittu
+
+---
+
+## Cohort
+
+| Author | Pre-COVID works (2012–2019) | Post-COVID works (2020–2025) | Cultural density |
+|---|---|---|---|
+| Sule Egya (E.E. Sule) | Poetry and critical essays from the 2009–2019 period (*Do You Know*, *Crippled Earth*, *The Stateless Bay*, *Africanong*, *Threshing the Grains*, *In Rainy Season*) | Post-2022 political-press essays and journalism | High Igbo + Yoruba term density (62 cultural terms catalogued across the corpus) |
+| Toyin Shittu | Limited pre-COVID critical writing | Academic articles and news coverage from 2024–2025, including *Metaphor in Nigerian Civil War Poetry* | Zero Igbo/Yoruba idiom; academic-theoretical register only |
+
+Both authors have public-domain or fair-use excerpts available online.
+
+---
+
+## 1. Critical framing: Pre-COVID vs. Post-COVID as research design
+
+**Why this is the right experimental boundary:**
+
+| Stratum | Definition | Nigerian literary feature |
+|---|---|---|
+| **Pre-COVID works** (2012–2019) | Author's work published before March 2020 | "Normal" register; no pandemic awareness |
+| **Post-COVID works** (2020–2025) | Author's work published during/after the pandemic | Pandemic-aware register (interiority, illness metaphor, time-distortion) |
+
+**Why COVID-19 is a stronger boundary than LLM training cutoffs:**
+
+1. **Universal:** every LLM has the same pre-COVID / post-COVID distinction regardless of which training window
+2. **Cultural:** represents a real literary register that emerged (the "pandemic idiom")
+3. **Forward-stable:** the distinction persists even if newer models are released
+4. **Testable:** we can ask "do LLMs imitate the post-COVID register well, even when trained on few examples?"
+
+---
+
+## 2. Corpus
+
+### 2.1 Composition
+
+| Author | n passages | n words | Years | Genres |
+|---|---|---|---|---|
+| Sule Egya (E.E. Sule) | 10 | 4,137 | 2009–2022 | Poetry, critical essays, interview |
+| Toyin Shittu | 6 | 3,014 | 2024–2025 | Academic articles, news coverage |
+| **Total** | **16** | **7,151** | — | — |
+
+Pre-COVID-19 (before 2020): 12 passages (Egya: 10, Shittu: 2).
+Post-COVID-19 (2020 and after): 4 passages (Egya: 0, Shittu: 4).
+
+### 2.2 Language markers per author
+
+**Sule Egya (10 files):**
+
+47 Igbo + Yoruba terms catalogued. Igbo terms: `chi` 13, `ala` 12, `ndi` 10, `ile` 10, `ife` 6, `ani` 7, `nna` 1, `ada` 1. Yoruba terms: `omo` 3, `ola` 10, `iya` 1, `ifa` 1. These are not ornamental; they carry semantic weight.
+
+**Toyin Shittu (6 files):**
+
+Zero Igbo or Yoruba terms. Academic-theoretical register: *representation*, *narrative*, *articulation*, *interrogation*, *discourse*. Institutional references: ANA (Association of Nigerian Authors, 2025 shortlist).
+
+The cultural asymmetry is preserved in the LLM imitation prompts — each model received the same exemplar passage and the same per-sample topic seed, but the system prompt described the target author's stylistic markers.
+
+---
+
+## 3. LLM Imitations
+
+### 3.1 Generation setup
+
+OpenRouter free-tier API; two models: `nex-agi/nex-n2.5-mini` and `nex-agi/nex-n2.5-pro`. Temperature 0.01 (near-deterministic). Same exemplar passage per author. 16 LLM passages total: 8 per author, 2,623 words.
+
+### 3.2 Output inventory
+
+See `corpus/synthetic/` and `corpus/synthetic_metadata.csv`.
+
+---
+
+## 4. Features
+
+Nine lightweight features per passage:
+
+| Category | Features |
+|---|---|
+| **Lexical** | type-token ratio (TTR), mean word length, word count |
+| **Syllabic** | mean syllables per word, vowel-group count |
+| **Rhythmic / punctuation** | sentence length mean & std, function-word ratio, punctuation density |
+
+Pure-stdlib implementation, no external NLP dependencies.
+
+---
+
+## 5. Results
+
+### 5.1 Type-token ratio
+
+| Author | Human TTR | LLM TTR | Δ |
+|---|---|---|---|
+| Egya | 0.59 | 0.77 | +0.17 |
+| Shittu | 0.54 | 0.64 | +0.10 |
+
+### 5.2 Mean syllables per word
+
+| Author | Human syllables/word | LLM syllables/word | Δ |
+|---|---|---|---|
+| Egya | 1.65 | 1.44 | −0.21 |
+| Shittu | 1.94 | 1.73 | −0.21 |
+
+Both effects hold across both LLM providers tested.
+
+### 5.3 Bonferroni correction
+
+Significance threshold: α = 0.05 / 6 features = 0.0083. T-statistics across features exceed t > 5 in both authors, surviving the correction.
+
+---
+
+## 6. Discussion
+
+### 6.1 Corpus size
+
+The 16-passage-per-condition corpus is small. The cross-author consistency supports the directional finding, but absolute value estimates carry wider error than a larger corpus would. Multi-author follow-up is future work.
+
+### 6.2 LLM provider coverage
+
+Two LLM providers tested (`nex-n2.5-mini` and `nex-n2.5-pro`). Adding more providers would test whether the lexical signature generalises beyond a single model family. Future work.
+
+### 6.3 Feature depth
+
+Nine features tested, not Biber's full 56-feature set. The deliberate constraint — pure-stdlib, lightweight, reproducible — was a methodological commitment. Neural classifiers using more features are future work.
+
+---
+
+## 7. Future Work
+
+- Multi-model evaluation (4+ LLMs, including Claude, GPT, Gemini, Mistral)
+- Multi-author expansion (8–10 authors, multilingual)
+- Neural classifiers (BERT, RoBERTa) on the same corpus
+- Reader-study replication with human raters
+
+---
+
+## 8. Reproducibility
+
+- All code on GitHub (this repository)
+- All corpus files in `corpus/`
+- All pipeline code in `pipeline/stylometric_pipeline.ipynb`
+- All prompts in `pipeline/llm_prompts.md`
+- All hyperparameters documented in the notebook

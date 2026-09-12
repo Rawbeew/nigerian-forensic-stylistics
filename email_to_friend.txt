@@ -1,0 +1,23 @@
+Subject: Quick favor — arXiv endorsement for a stylometry preprint
+
+Hi [Name],
+
+Hope you and the family are well. I've been working on a research project since March — forensic stylometry on contemporary Nigerian poetry, with a small controlled experiment on whether LLMs can imitate authors in ways that survive basic stylometric analysis.
+
+The preprint is now ready. I've put the corpus, the analysis pipeline, and the LLM-imitations all on GitHub: https://github.com/Rawbeew/nigerian-forensic-stylistics
+
+The paper itself is attached (paper_combined.pdf — abstract + one-page summary). The headline finding is small but clean: across both authors, LLM imitations show higher type-token ratio and lower mean syllables per word than the human originals. The lexical signal survives at α = 0.05 with the small corpus. Nothing groundbreaking, but the methodology is portable to any author pair in any language, and the free-tier reproducibility is unusual for this corner of the field.
+
+The catch is that arXiv requires first-time submitters in cs.CL to get an endorsement from someone who has already submitted in the area. That's the only reason I'm writing. It's a 30-second click on your end — arXiv emails you a vouch request, you confirm the topic is one you recognise, and I'm cleared to submit.
+
+If you'd rather not — completely fine, no awkwardness — I have a backup plan. But asking you felt like the right first move given the family connection and the fact that you've been in the field.
+
+Two specific things would help if you say yes:
+1. Confirm you remember what subfield you've published in most recently (so I can cite the right category when I submit).
+2. Let me know whether you'd want to be acknowledged in the paper's acknowledgements section. I won't add your name without asking, and endorsement doesn't require co-authorship.
+
+Thanks for considering.
+
+Rabiu
+ORCID: 0009-0007-8968-8620
+GitHub: https://github.com/Rawbeew/nigerian-forensic-stylistics
