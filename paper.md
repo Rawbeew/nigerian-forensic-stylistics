@@ -5,11 +5,11 @@
 **Authors:** Rabiu Raji (ORCID [0009-0007-8968-8620](https://orcid.org/0009-0007-8968-8620))
 
 
-**Date:** September 2026 (preprint v9)
+**Date:** September 2026
 
 **Repository:** <https://github.com/Rawbeew/nigerian-forensic-stylistics>
 
-**Status:** Draft preprint v9
+**Status:** Preprint (in preparation for arXiv submission)
 
 **Keywords:** forensic stylometry, authorship attribution, large language models, Nigerian literature, lexical diversity, computational linguistics
 
